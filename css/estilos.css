@@ -307,11 +307,39 @@ body{
 }
 
 /*MODELOS PRESENTACIÓN - HOVER EFFECT */
+
+
+.cont_hover{
+    padding: 150px;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.row3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .art {
     position: relative;
-    width: 250px;
+    width: 400px;
     transition: all 0.3s ease;
-    display: flex;
 }
 
 .art img:first-child {
@@ -323,7 +351,7 @@ body{
 
 .art img:last-child {
     position: absolute;
-    width: 200px;
+    width: 250px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -375,3 +403,4 @@ body{
     margin-left: 45%; margin-right: 45%;
     
 }
+
