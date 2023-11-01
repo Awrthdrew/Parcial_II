@@ -318,6 +318,8 @@ body{
     justify-content: center;
     gap: 10px;
     margin: 10px;
+    max-width: 1200px;
+    flex-wrap: wrap;
     
 }
 
@@ -327,6 +329,7 @@ body{
     justify-content: center;
     gap: 10px;
     margin: 10px;
+    max-width: 1200px;
 }
 
 .row3{
@@ -334,6 +337,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    max-width: 1200px;
 }
 
 .art {
