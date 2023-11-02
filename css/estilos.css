@@ -310,17 +310,14 @@ body{
 
 
 .cont_hover{
-    padding: 150px;
+    margin-top: auto;
+    margin-bottom: 75px;
 }
 .row1{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 10px;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    
 }
 
 .row2{
@@ -328,8 +325,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 10px;
-    max-width: 1200px;
+    
 }
 
 .row3{
@@ -337,7 +333,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    max-width: 1200px;
+    
 }
 
 .art {
@@ -394,17 +390,27 @@ body{
     transform: translateY(10%);
 }
 
-.pp_button{
-    margin-top: 50px;
-    background-color: rgb(202, 77, 77) ;
-    text-decoration: none;
-    color: white;
-    justify-self: center;
-    padding: 10px 20px;
-    border-radius: 30px;
+
+/*GALERÍAS DE LOS MODELOS*/
+
+.dgallery{
+    margin: 50px;
     display: flex;
-    justify-content: center;
-    margin-left: 45%; margin-right: 45%;
+    width: 1000px; height: 750px;
     
 }
 
+.dimg{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease; 
+}
+
+.dgallery .dimg:hover{
+    cursor:grab;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
