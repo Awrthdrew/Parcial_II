@@ -1,0 +1,172 @@
+/*GALERÍAS DE LOS MODELOS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-containerr: 100px 0;
+    --color-title: #001a49;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 550px;
+    background: rgb(255, 255, 255);
+}
+
+.container-slider{
+    width: 90%; 
+    max-width: 900px;
+    margin-top: auto;
+    margin-left: 25%;
+    overflow: hidden;
+    box-shadow: 0 0 00 10px #f74444, 0 15px 50px;
+    position: relative;
+}
+
+
+.slider{
+    display: flex;
+    width: 500%; 
+    height: 400px;
+    margin-left: -100%;
+    
+}
+
+.slider__section{
+    width: 100%;
+}
+
+.slider__img{
+    display: block;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px; height: 40px;
+    background: #f74444;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px; font-weight: bold; font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover{
+    background: white;
+}
+
+.slider__btn--left{
+    left: 10px;
+}
+
+.slider__btn--right{
+    right: 10px;
+}
+
+
+.btn_model{
+    position: absolute;
+    bottom: 50px;
+    margin-left: 800px;
+}
+
+.btn{
+    margin-top: 25px;
+    display: inline-block;
+    background-color: rgb(202, 77, 77) ;
+    text-decoration: none;
+    color: white;
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.title_m {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 805px;
+    font-size: larger;
+}
+
+.title_d {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 805px;
+    font-size: larger;
+}
+.title_c {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 805px;
+    font-size: larger;
+}
+.title_b {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 805px;
+    font-size: larger;
+}
+.title_k {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 860px;
+    font-size: larger;
+}
+.title_h {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 820px;
+    font-size: larger;
+}
+.title_my {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 720px;
+    font-size: larger;
+}
+.title_mu {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 790px;
+    font-size: larger;
+}
+.title_p {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 750px;
+    font-size: larger;
+}
+
+.info_price{
+    position: absolute;
+    display: flex;
+    margin-top: 33%;
+    margin-left: 6%;
+    margin-right: 8%;
+    justify-content: center;
+    text-align: center;
+}
+
+.price{
+    position: absolute;
+    bottom: 120px;
+    margin-left: 810px;
+    font-size: larger;
+}
