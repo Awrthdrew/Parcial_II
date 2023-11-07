@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 
@@ -187,6 +188,119 @@ body{
     overflow: hidden;
     margin-top: 75px;
     margin-bottom: 75px;
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.25s, box-shadow 0,2s;
+}
+.cta2:hover {
+    opacity: 0.7;
+}
+.cta2:active {
+    opacity: 0.5;
+    box-shadow: 0px 0px 5px black;
+}
+
+/*INFORMACION*/
+
+.info {
+    margin-bottom: 75px;
+    overflow: hidden;
+}
+
+.info_container{
+    display: flex;
+    align-items: center;
+}
+
+.info_texts{
+    flex: 1;
+    margin-right: 70px;
+}
+
+.info_title{
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.info_story{
+    text-align: justify;
+}
+
+.info_map{
+    border: solid;
+    border-width: 5px;
+    border-style: double;
+    border-color: #f74444;
+    max-width: 410px;
+    flex: 1;
+}
+
+/*FORMULARIO*/
+input {
+    margin: 0;
+    padding: 0;
+}
+label {
+    margin: 0;
+    padding: 0;
+}
+
+
+.form {
+    background-color: #f7e5e5;
+    background-image:  radial-gradient(#f74444 0.5px, transparent 0.5px), radial-gradient(#f74444 0.5px, #f7e5e5 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+    margin-bottom: 75px;
+}
+
+.form_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.form_title {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.form_box {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.form_box_label {
+    font-weight: BOLD;
+    font-size: 20px;
+    color: rgb(119, 114, 114);
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.form_box_input {
+    border: solid;
+    border-color: black;
+    border-style: double;
+    border-width: 4px;
+    margin-top: 0px;
+    min-width: 300PX;   
+    flex: 1;
 }
 
 .knowledge_container{
@@ -340,6 +454,16 @@ label {
 .footer{
     background-color: #141414;
     color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.25s, box-shadow 0,2s;
+}
+.footer_submit:hover {
+    opacity: 0.7;
+}
+.footer_submit:active {
+    opacity: 0.5;
+    box-shadow: 0px 0px 6px black;
 }
 
 .footer_title{
