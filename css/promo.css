@@ -1,0 +1,158 @@
+/*GALERÍAS DE PROMCIONES*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-containerr: 50px 0;
+    --color-title: #001a49;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background: rgb(255, 255, 255);
+}
+
+.container-slider{
+    width: 100%; 
+    max-width: 900px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 10px #f74444, 0 15px 50px;
+    position: relative;
+}
+
+.promo-slider{
+    width: 100%; 
+    max-width: 900px;
+    margin: 5% auto;
+    margin-top: 10%;
+    overflow: hidden;
+    box-shadow: 0 0 10px 10px #f74444, 0 15px 50px;
+    position: relative;
+}
+
+
+.slider{
+    display: flex;
+    width: 500%; 
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider__section{
+    width: 100%;
+}
+
+.slider__img{
+    display: block;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px; height: 40px;
+    background: #f74444;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px; font-weight: bold; font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover{
+    background: white;
+}
+
+.slider__btn--left{
+    left: 10px;
+}
+
+.slider__btn--right{
+    right: 10px;
+}
+
+
+.btn_model{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn{
+    margin-top: 15px;
+    display: inline-block;
+    background-color: rgb(202, 77, 77) ;
+    text-decoration: none;
+    color: white;
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.description{
+    position: absolute;
+    display: flex;
+    margin-top: 42%;
+    margin-left: 25%;
+    margin-right: 8%;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
+
+.p_slider{
+    display: flex;
+    width: 500%; 
+    height: 400px;
+    margin-left: -100%;
+}
+
+.title_promo {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+    .container-slider, .promo-slider {
+        margin: 10% 5%;
+        margin-top: 45%;
+        height: 350px;
+    }
+
+    .btn_model {
+        bottom: 2%;
+    }
+
+    .description{
+        margin-top: 150%;
+    }
+
+    .title_promo{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .description{
+        margin-top: 45%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+
+    .description{
+        margin-top: 50%;
+        margin-left: 16%;
+    }
+}

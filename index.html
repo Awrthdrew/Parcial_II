@@ -49,10 +49,10 @@
                     <a href="modelos.html" class="nav_links">Modelos</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Información</a>
+                    <a href="#info" class="nav_links">Información</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Contacto</a>
+                    <a href="#contacto" class="nav_links">Contacto</a>
                 </li>
 
             </ul>
@@ -110,6 +110,128 @@
             </div>
         </section>
         
+        
+        <section href="info" class="info">
+            <div class="info_container container">
+                <div class="info_texts">
+                    <h1 class="info_title" id="info">Sobre Nosotros</h1>
+                    <p class="info_story">
+                        En CHERRYPUERRO siempre buscamos alcanzar la excelencia de calidad en los productos ofrecidos
+                        a nuestra clientela exclusiva, la cual es ofrecida una gran variedad de autos iconicos, que
+                        llevan las fantasias del niño en nuestro interior a la realidad. Empezamos el 9/12/2018 en
+                        Madrid con este objetivo en mente, y junto a un equipo de varios especialistas en multiples
+                        areas, empezamos a investigar como recrear estos autos de pelicula a la vida real, con total
+                        fidelidad al modelo original. Nuestro primer logro fue la invencion de Bumblebee, de la pelicula 
+                        Transformers. Este modelo final tenia la increible capacidad de convertirse en un transformer,
+                        tal como se muestra en las peliculas, y con la fuerza, armas e inteligencia de estos mismos.
+                        Luego de una exitosa y concurrida exposicion en las calles de Madrid durante 3 dias, llevamos
+                        nuevos modelos a ser presentados alrededor del mundo, como Rio de Janeiro, Buenos Aires, Doha y mas
+                        ciudades importantes.
+                    </p>
+                </div>
+                <figure class="info_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0042568404156!2d-3.6909086245151195!3d40.4530427534292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sSantiago%20Bernab%C3%A9u%20Stadium!5e0!3m2!1sen!2sar!4v1699300506976!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="form_container container">
+                <h1 class="form_title" id="contacto">CONTACTATE CON NOSOTROS</h1>
+
+                <form class="form_box" action="#" method="post" id="formulario" onsubmit="return validarFormulario()">
+                    <div class="form_section">
+                    <label class="form_box_label" for="nombre">NOMBRE Y APELLIDO:</label>
+                    <input class="form_box_input" type="text" id="nombre" name="nombre" placeholder="Ejemplo: German Cano" required><br><br>
+                    </div>
+
+                    <div class="form_section">
+                        <label class="form_box_label"  for="email">CORREO ELECTRONICO:</label>
+                        <input class="form_box_input"  type="email" id="email" name="email" placeholder="germancano@7mail.com" required><br><br>
+                    </div>
+
+                    <div class="form_section">
+                        <label class="form_box_label" for="pais">PAIS:</label>
+                        <select class="form_box_input"  id="pais" name="pais">
+
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="México">México</option>
+                            <option value="España">España</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Otro">Otro</option>
+                        </select><br><br>
+                    </div>
+
+                    <div class="form_section">
+                        <label class="form_box_label" for="telefono">NUMERO DE TELEFONO:</label>
+                        <input class="form_box_input" type="tel" id="telefono" name="telefono" placeholder="+54 04 11 2023"><br><br>
+                    </div>
+
+                    <div class="form_section">
+                        <label class="form_box_label" for="comentarios">COMENTARIOS:</label><br>
+                        <textarea class="form_box_input" id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Danos tu opinion!"></textarea><br><br>
+                    </div>
+                    <input class="cta2" type="submit" value="Enviar" >
+                </form>
+            </div>
+
+                <script>
+                    function validarFormulario(event) {
+
+
+                        var nombre = document.getElementById("nombre").value;
+                        var nombre_boolean = false;
+                        var email = document.getElementById("email").value;
+                        var email_boolean = false;
+                        var telefono = document.getElementById("telefono").value;
+                        var telefono_boolean = false;
+
+                        
+                        var nombrePattern = /^[A-Za-z\s]+$/;
+                        if (!nombre.match(nombrePattern) || document.getElementById("nombre").value == "") {
+                            alert("Por favor, ingrese un nombre válido.");
+                            return false;
+                        }
+                        else
+                        {
+                            nombre_boolean = true;
+                        }
+
+                       
+                        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                        if (!email.match(emailPattern) || document.getElementById("email").value == "") {
+                            alert("Por favor, ingrese una dirección de correo electrónico válida.");
+                            return false;
+                        }
+                        else
+                        {
+                            email_boolean = true;
+                        }
+
+                        
+                        var telefonoPattern = /^[0-9+\-\(\)]*$/;
+                        if (!telefono.match(telefonoPattern) || document.getElementById("telefono").value == "") {
+                            alert("Por favor, ingrese un número de teléfono válido.");
+                            return false;
+                        }
+                        else
+                        {
+                            telefono_boolean = true
+                        }
+
+                        
+                        if(nombre_boolean == true && email_boolean == true && telefono_boolean == true)
+                        {
+                            alert("Datos correctamente enviados")
+                            return true;
+                        }
+                    }
+                </script>
+        </section>
     </main>
     
     <footer class="footer">
@@ -125,10 +247,10 @@
                         <a href="modelos.html" class="nav_links">Modelos</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class="nav_links">Información</a>
+                        <a href="#info" class="nav_links">Información</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class="nav_links">Contacto</a>
+                        <a href="#contacto" class="nav_links">Contacto</a>
                     </li>
                 </ul>
             </nav>

@@ -6,22 +6,17 @@
     --color-title: #001a49;
 }
 
-*{
-    box-sizing: border-box;
-}
-
 body{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    min-height: 550px;
     background: rgb(255, 255, 255);
 }
 
 .container-slider{
     width: 90%; 
     max-width: 900px;
-    margin-top: auto;
-    margin-left: 25%;
+    margin: 25%;
+    margin-top: 8%;
     overflow: hidden;
     box-shadow: 0 0 00 10px #f74444, 0 15px 50px;
     position: relative;
@@ -33,7 +28,6 @@ body{
     width: 500%; 
     height: 400px;
     margin-left: -100%;
-    
 }
 
 .slider__section{
@@ -73,6 +67,7 @@ body{
 
 
 .btn_model{
+    display: flex;
     position: absolute;
     bottom: 50px;
     margin-left: 800px;
@@ -87,6 +82,15 @@ body{
     justify-self: center;
     padding: 10px 20px;
     border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.25s, box-shadow 0,2s;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+.btn:active {
+    opacity: 0.5;
+    box-shadow: 0PX 0PX 6px black;
 }
 
 .title_m {
@@ -102,6 +106,7 @@ body{
     display: flex;
     margin-top: 20px;
     margin-left: 805px;
+    max-width: 1300px;
     font-size: larger;
 }
 .title_c {
