@@ -87,6 +87,15 @@ body{
     justify-self: center;
     padding: 10px 20px;
     border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.25s, box-shadow 0,2s;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+.btn:active {
+    opacity: 0.5;
+    box-shadow: 0PX 0PX 6px black;
 }
 
 .title_m {
